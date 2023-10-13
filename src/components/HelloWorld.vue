@@ -15,7 +15,8 @@
     <p>
       Chrome : <span class="text-red-500">{{ chromeVersion }}</span><br />
       Node : <span class="text-red-500">{{ nodeVersion }}</span><br />
-      Electron : <span class="text-red-500">{{ electronVersion }}</span>
+      Electron : <span class="text-red-500">{{ electronVersion }}</span> <br />
+      Your value form someObj: : <span class="text-red-500">{{ someValue }}</span> <br />
     </p>
   </div>
 </template>
@@ -28,8 +29,13 @@ const count = ref(0);
 const chromeVersion = ref(versions.chrome());
 const nodeVersion = ref(versions.node());
 const electronVersion = ref(versions.electron());
+const someValue = ref(someObj.getData());
+
 
 console.log("Node Version: " + versions.node());
+console.log("Your value : " + someObj.getData());
+
+
 
 
 
