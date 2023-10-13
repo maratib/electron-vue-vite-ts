@@ -1,7 +1,4 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
-}
+/* add or update the following in your assets/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
