@@ -2,7 +2,7 @@
 // plugin that tells the Electron app where to look for the Vite-bundled app code (depending on
 // whether you're running in development or production).
 
-import { SomeObj, Versions } from "./electron/preloaded/pre-types";
+import { SomeObj, Versions } from "./electron/preload/pre-types";
 
 declare global {
   declare const MAIN_WINDOW_VITE_DEV_SERVER_URL: string;
