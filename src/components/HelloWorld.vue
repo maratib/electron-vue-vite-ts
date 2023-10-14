@@ -17,6 +17,7 @@
       Node : <span class="text-red-500">{{ nodeVersion }}</span><br />
       Electron : <span class="text-red-500">{{ electronVersion }}</span> <br />
       Your value form someObj: : <span class="text-red-500">{{ someValue }}</span> <br />
+      <button @click="showAlert">Show Notification</button>
     </p>
   </div>
 </template>
@@ -34,6 +35,10 @@ const someValue = ref(someObj.getData());
 
 console.log("Node Version: " + versions.node());
 console.log("Your value : " + someObj.getData());
+
+const showAlert = () => {
+  new window.Notification('Tile', { body: 'This is a Body' })
+};
 
 
 
