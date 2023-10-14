@@ -1,5 +1,6 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import path from 'path';
+import IpcMain from './ipc-main';
 
 export default class Main {
 
@@ -74,3 +75,4 @@ export default class Main {
 }
 
 Main.main(app, BrowserWindow);
+IpcMain.main(ipcMain);
